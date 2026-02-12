@@ -1,12 +1,10 @@
 name: Workflow 1 - Job Dependencies
 
 on:
-  
-  release:
-    types:
-      workflow_dispatch: #comment
+  workflow_dispatch: # This allows you to run it manually from the Actions tab
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
