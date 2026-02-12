@@ -1,6 +1,10 @@
 name: Workflow 1 - Job Dependencies
 
 on:
+  
+  release:
+    types:
+      workflow_dispatch: #comment
   push:
     branches: [ main ]
 
